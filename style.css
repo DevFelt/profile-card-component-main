@@ -1,0 +1,132 @@
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1cacb4;
+}
+
+.wrapper-all{
+    border-radius: 15px;
+    width: 330px;
+    height: 410px;
+    /* box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5), 5px 5px 10px rgb(0, 0, 0, 0.1); */
+    overflow: hidden;
+    background-color: white;
+}
+
+.image-bg{
+    height: 150px;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrap-victor{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -55px;
+}
+
+.image-victor{
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+.personal{
+    position: relative;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name{
+    margin-bottom: 10px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.3rem;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.personal span{
+    font-weight: 100;
+    color: var(--Dark-grayish-blue);
+}
+
+.personal p{
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.87rem;
+    color: var(--Dark-grayish-blue)
+}
+
+.line{
+    position: relative;
+    top: -25px;
+    height: 1px;
+    border-top: 1px solid hsl(227, 10%, 46%);
+}
+
+.stats{
+    position: relative;
+    bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 40px 0 40px;
+}
+
+.followers, .likes, .photos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.likes{
+    padding-right: 10px;
+}
+
+.k-80, .k-803, .k-14{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.1rem;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.foll, .likes-p, .photos{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.87rem;
+    color: var(--Dark-grayish-blue)
+}
+
+.attribution{
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px){
+    .wrapper-all{
+        width: 90%;
+    }
+    .stats{
+        width: auto;
+    }
+}
