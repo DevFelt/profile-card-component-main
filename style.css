@@ -20,7 +20,7 @@ body{
     border-radius: 15px;
     width: 330px;
     height: 410px;
-    /* box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5), 5px 5px 10px rgb(0, 0, 0, 0.1); */
+    box-shadow: 3px 3px 15px rgb(0, 0, 0, 0.1), 3px 3px 15px rgb(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: white;
 }
